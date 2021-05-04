@@ -1,0 +1,47 @@
+{
+  "name": "latinly",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/server.js",
+<<<<<<< HEAD
+=======
+  "files": [
+    "*"
+  ],
+>>>>>>> c789898f96f3940eabc33780c2807806fc24383a
+  "scripts": {
+    "test": "mocha --require test/setup.js",
+    "dev": "nodemon src/server.js",
+    "migrate": "postgrator --config postgrator-config.js",
+    "migrate:test": "env NODE_ENV=test npm run migrate",
+    "migrate:production": "heroku run npm run migrate",
+    "start": "node src/server.js",
+    "predeploy": "npm audit",
+    "deploy": "git push heroku master",
+    "postDeploy": "npm run migrate:production"
+  },
+  "keywords": [],
+  "engines": {
+    "node": "12.20.1"
+  },
+  "Author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "helmet": "^3.15.0",
+    "jsonwebtoken": "^8.5.0",
+    "knex": "^0.16.3",
+    "morgan": "^1.9.1",
+    "postgrator-cli": "^3.2.0",
+    "pg": "^7.18.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.9",
+    "supertest": "^3.3.0"
+  }
+}
