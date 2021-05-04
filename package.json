@@ -3,9 +3,6 @@
   "version": "0.0.1",
   "description": "",
   "main": "src/server.js",
-  "files": [
-    "*"
-  ],
   "scripts": {
     "test": "mocha --require test/setup.js",
     "dev": "nodemon src/server.js",
