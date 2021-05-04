@@ -3,7 +3,7 @@
 ## Links
 
 Client 
-- https://latinly-ajg.vercel.app/
+- https://latinly.vercel.app/
 - https://github.com/agiannotti/latinly-client
 
 
